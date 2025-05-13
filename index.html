@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Data-Driven Galaxy Evolution</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+<!--        <link rel="icon" href="./graphics/CIERA_LOGO_new.png">-->
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-md">
+			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main-navigation">
+				<ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#description">Program description</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#team">The Team</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#virtualweeks">Virtual Program</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#ccaweek">Joint KITP-CCA Workshop</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#kitpweeks">KITP in-person/hybrid Program</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#conference">KITP Conference</a>
+                    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+        <header class="header pageheader flex-column" id="home">
+            <div class="overlay"></div>
+            <div class="description">
+				<h1>Dancing Streams in Stellar Halos</h1>
+                <p>subtitle</p>
+            </div>
+            <canvas id="nokey"></canvas>
+            <script src="animation.js"></script>
+        </header>
+		
+		<div class="bg1">
+			<div class="container-fluid">
+				<div class="research-page" id="description">
+                    </br>
+					<h2 class="description-title">Project description</h2>
+                    <p><b>This collaborative KITP program took place January 17 - March 24 2023. It consisted of multiple components, both virtual and in-person or hybrid: </br>
+                        <ul>
+                        <li><!--<a href="#virtualweeks">A virtual program component</a> hosted by <a href="https://www.kitp.ucsb.edu" target="_blank">KITP, UCSB</a>, January 17 - February 24 2023</li>
+                        <li><a href="#ccaweek">A hybrid workshop</a> at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" target ="_blank">CCA, Flatiron Institute</a> in New York, January 30 - February 2 2023</li>
+                        <li><a href="https://www.kitp.ucsb.edu/activities/galevo23", target="_blank">An KITP in-person program component</a> at the <a href="https://www.kitp.ucsb.edu" target="_blank">KITP, UCSB</a> in Santa Barbara, February 27 - March 24 2023</li>
+                        <li><a href="https://www.kitp.ucsb.edu/activities/galevo-c23" target="_blank">A KITP conference</a> at <a href="https://www.kitp.ucsb.edu" target="_blank">KITP, UCSB</a> in Santa Barbara, March 21 - 24 2023</li>
+                            --></ul></b></p>
+                    </br>
+                    <!--<p><b>
+                        You can still <a href="https://docs.google.com/forms/d/e/1FAIpQLSfru304XCr2gQITU3UGPOj_sZftfAoQ7K7U4WSxf3T4lMQ64Q/viewform?usp=sf_link" target="_blank">note your interest on this form</a> for the virtual program and remote attendance for the CCA workshop. Pre-registrating on this form is needed so the KITP and/or CCA can send you the necessary invitations for e.g. zoom sessions and the slack space.</b></br>
+                    </p>
+                    </br>-->
+                    <h2 class="the-team-subtitle">Motivation</h2>
+                    <!--<p>Galaxy formation and evolution is a field that combines many complex and interdependent physical processes across different spatial and time scales. Moreover, observational data exists across a large wavelength range, and with heterogeneous spatial resolutions and observing depths, each sensitive to different physical tracers. Astrostatistics and machine learning can help us mine the huge existing and upcoming multiwavelength datasets, effectively down to the pixel and spaxel level, in order to determine the fundamental relationships between galaxy properties and evolutionary processes. Additionally, novel techniques are required to facilitate comparisons between galaxy formation theories and all observational data -- including outlier galaxy populations, and to integrate galaxy formation physics in the inference of cosmological parameters. However, connecting statistics and machine learning results to an improved understanding of key astrophysical processes remains a major challenge. This program will initiate a discussion between the empirical exploration of the extremely large and diverse data sets from both observations and simulations and the deduction of the underlying physics, aiming to answer the question: <i>How do we optimally combine the empirical intuition gained using data science tools with theoretical intuition and knowledge, with the deductive goal of understanding the physical processes that govern the formation and evolution of galaxies?</i></p>-->
+                    </br>
+                    
+                    </br>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="bg1">
+            <div class="container-fluid">
+                <div class="the-team-page" id="team">
+                    </br>
+                    <h2 class="the-team-title">The Team</h2>
+                    </br>
+                    <!--<h1 class="the-team-subtitle">Coordinators</h1>
+                    <ul>
+                        <li><a href="http://tstarkenburg.github.io" target="_blank">Tjitske Starkenburg</a></li>
+                        <li><a href="https://jwuphysics.github.io" target="_blank">John Wu</a></li>
+                        <li><a href="https://franciscovillaescusa.github.io" target="_blank">Francisco Villaescusa-Navarro</a></li>
+                        <li><a href="https://www.peterbehroozi.com" target="_blank">Peter Behroozi</a></li>
+                    </ul>
+                    </br>
+                    <h1 class="the-team-subtitle">Scientific Advisors</h1>
+                    <ul>
+                        <li><a href="http://jegpeek.space" target="_blank">Joshua Peek</a></li>
+                        <li><a href="https://users.flatironinstitute.org/~sho/index.html" target="_blank">Shirley Ho</a></li>
+                        <li><a href="https://romeeld.wixsite.com/romeel" target="_blank">Romeel Dave</a></li>
+                    </ul>-->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg1">
+            <div class="container-fluid">
+                <div class="research-page" id="virtualweeks">
+                    </br>
+                    <!--<h2 class="description-title">Virtual Program</h2>
+                    </br>
+                    <p>This virtual component of our KITP program took place January 17 - February 24 2023. It consisted of a sparse but regular schedule of different events, described in more detail below the schedule. </p>
+                    <p><b>We expect all participants to treat each other respectfully, and to abide by our <a href="https://urldefense.com/v3/__https://docs.google.com/presentation/d/1-IYTpMGe-JIDyyZU0m04uPJseR81ZoNa-MHdpRLkcM0/edit?usp=sharing__;!!Dq0X2DkFhyF93HkjWTBQKhk!UxRpyi0Eo-jrh7IQbIf5pORx0DEj2UCbbQe-TDSQaX9O1ZN7-e9fGNIMP7AS95XNQVPmgtLBW9ITLOztLqPBXqyOKqrp4Ab3dhKKiw$" target="_blank">code of conduct.</a> Participation also requires agreeing to follow the <a href="https://www.kitp.ucsb.edu/sites/default/files/kitp/forms/KITP-Code-of-Conduct-2020.pdf" target="_blank"
+                        >KITP code of conduct.</a></b></p></br>
+                    
+                    <h1 class="the-team-subtitle">Detailed schedule</h1>
+                    <p>The schedule will be updated with speakers and titles/topics when those are confirmed. Links to recorded talks will be added when available. Please also find all recordings (some public, some private) on the <a href="https://online.kitp.ucsb.edu/online/galevo23/" target="_blank">KITP program page.</a> <b>All times quoted are in US Pacific Time (UTC-8).</b></p></br>
+                        <ul>
+                        <li><h1 class="the-team-subtitle">Week 1 - virtual - <i>Introducing the program: Galaxy evolution and data-driven advances</i></h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday January 16</th>
+                                  <td></td>
+                                  <td>Martin Luther King Day - No Program</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday January 17</th>
+                                  <td>9.00am - 9.30am</td>
+                                  <td><a href="https://docs.google.com/presentation/d/1TjZ9f09m3wWmzwKY2MQ1l5Myf0R-QgLuccYInKAmHP4/edit?usp=sharing" target="_blank">Welcome and introduction to the program</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.30am - 10.15am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/dave/" target="_blank">Review talk: <i>Understanding galaxy evolution with simulations and machine learning</i> by <b>Romeel Dave (Royal Observatory, University of Edinburgh)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>10.15am - 11.00am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/discussion1/" target="_blank">Moderated open discussion</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday January 18</th>
+                                  <td>9.00am - 9.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/lightning1/" target="_blank">Lightning & Thunder talks (1 slide / 1 min each)</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.30am - 11.00am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/qezlou_ho/" target="_blank">Tutorial: <i>Large-scale galaxy formation simulations and Machine Learning approaches</i> by <b>Mahdi Qezlou (University of California Riverside)</b> and <b>Ming-Feng Ho (University of California Riverside)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.00pm - 4.30pm</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/lightning2/" target="_blank">Lightning & Thunder talks (1 slide / 1 min each)</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.30pm - 5.00pm</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/villaescusanavarro/" target="_blank"><i>The CAMELS Project</i> by <b>Francisco Villaescusa Navarro (Flatiron Institute)</b></a> and <a href="https://online.kitp.ucsb.edu/online/galevo23/oppenheimer/" target="_blank"><i>Multi-Wavelength Parameter Inference for the Circumgalatic Medium</i> by <b>Benjamin Oppenheimer (University of Colorado, Boulder)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday January 19</th>
+                                  <td>9.00am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/wu/" target="_blank">Tutorial: <i>Introduction to Convolutional Neural Networks</i> by <b>John Wu (Space Telescope Science Institute)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>10.30am - 11.00am</td>
+                                  <td>Networking activity</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday January 20</th>
+                                  <td>9.00am - 10.00am</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/buck/" target="_blank"><i>Studying galaxy formation with physics informed ML and classical numerical simulations</i> by <b>Tobias Buck (University of Heidelberg)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/hassan/" target="_blank"><i>Extracting all information from future large scale surveys</i> by <b>Sultan Hassan (New York University)</b></a>, and <a href="https://online.kitp.ucsb.edu/online/galevo23/koudmani/" target="_blank"><i>The Role of AGN Feedback in Dwarf Galaxies</i> by <b>Sophie Koudmani (Flatiron Institute)</b></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 2 - virtual - <i>Galaxy scaling relations and the galaxy-halo connection</i></h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday January 23</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/gawiser/" target="_blank">Review talk: <i>Galaxy scaling relations and the galaxy-halo connection</i> by <b>Eric Gawiser (Rutgers University)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/discussion2/" target="_blank">Moderated open discussion</a></td>
+                                </tr>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday January 24</th>
+                                  <td>9.00am - 9.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/lightning3/" target="_blank">Lightning & Thunder talks (1 slide / 1 min each)</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.30am - 11.00am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/desanti_lovell/" target="_blank">Tutorial: <i>The galaxy-halo connection and Machine Learning approaches</i> by <b>Natali de Santi (Flatiron Institute/University of Sao Paulo)</b> and <b>Chris Lovell (University of Portsmouth)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday January 25</th>
+                                  <td>9.00am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/behroozi/" target="_blank">Tutorial: <i>Galaxy scaling relations through working with Universe Machine</i> by <b>Peter Behroozi (University of Arizona)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>10.30am - 11.00am</td>
+                                  <td>Ethics discussion: What boundaries should we set for the use of generative models?</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.00pm - 4.30pm</td>
+                                  <td>Lightning & Thunder talks (1 slide / 1 min each)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.30pm - 5.00pm</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/forbes/" target="_blank"><i>Promise and perils of equilibrium models for understanding galaxy scaling relations</i> by <b>John Forbes (Flatiron Institute)</b></a> and <a href="https://online.kitp.ucsb.edu/online/galevo23/sunayama/" target="_blank"><i>How to quantify systematics in optical clusters?</i> by <b>Tomomi Sunayama (University of Arizona)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday January 26</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday January 27</th>
+                                  <td>9.00am - 10.00am</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/horowitz/" target="_blank"><i>Discrete to Differentiable: The Gumbel-Softmax Trick and Halo Occupation Distributions</i> by <b>Benjamin Horowitz (Lawrence Berkeley Laboratory)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/beltzmohrman/" target="_blank"><i>Toward Accurate Modeling of Galaxy Clustering on Small Scales: Halo Model Extensions and Lingering Tension</i> by <b>Gillian Beltz-Mohrman (Argonne National Laboratory)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/nadler/" target="_blank"><i>The Faint End of the Galaxy-Halo Connection</i> by <b>Ethan Nadler (Carnegie Observatories/University of Southern California)</b></a> and <a href="https://online.kitp.ucsb.edu/online/galevo23/starkenburg/" target="_blank"><i>Apples-to-apples comparisons of simulated and observed galaxy samples</i> by <b>Tjitske Starkenburg (Northwestern University)</b></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 3 - Joint KITP-CCA workshop - <i>Applications of cutting-edge deep learning in astronomy</i></h1>
+                        <p><b>Please see the detailed program of the hybrid workshop at the CCA <a href="#ccaweek">here</a>.</b></br>
+                        As this week is hosted by the CCA instead of KITP it does require a separate registration and will use separate zoom links. If you have not registered yet but would like to join remotely please let us know.</br></p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Week 4 - virtual - <i>Outliers, failure modes, domain shifts, and uncertainties</i></h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday February 6</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/ciprijanovic/" target="_blank">Review talk: <i>Bridging the gap between astronomical datasets with AI - Domain Shift, Model Robustness and Failure Modes</i> by <b>Aleksandra Ciprijanovic (Fermilab)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/discussion3/" target="_blank">Moderated open discussion</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday February 7</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday February 8</th>
+                                  <td>9.00am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/malz/" target="_blank">Tutorial: Photo-z's and uncertainties by <b>Alex Malz (Carnegie-Mellon University)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>10.30am - 11.00am</td>
+                                  <td>Ethics discussion: Carbon footprint</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday February 9</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday February 10</th>
+                                  <td>9.00am - 10.00am</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/bolzonella/" target="_blank"><i>Millions to billions of photometric redshifts</i> by <b>Micol Bolzonella (INAF-OAS Bologna)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/liang/" target="_blank"><i>Autoencoding Galaxy Spectra: Redshift Invariance and Outlier Detection</i> by <b>Yan Liang (Princeton University)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/dey/" target="_blank"><i>Calibrated Predictive Distributions for Photometric Redshifts</i> by <b>Biprateep Dey (University of Pittsburgh)</b></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 5 - virtual - <i>Combining heterogeneous data sets and multi-wavelength astronomy</i></h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday February 13</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/zhang/" target="_blank">Review talk: <i>A few notes about using heterogeneous and multi-wavelength data sets</i> by <b>Yuanyuan Zhang (NOIRLab)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/discussion4/" target="_blank">Moderated open discussion</a></td>
+                                </tr>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday February 14</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday February 15</th>
+                                  <td><b>10.00am - 11.30am</b> (Please note: different start time!)</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/hearin/" target="_blank">Tutorial:  Autodifferentiation and JAX by <b>Andrew Hearin (Argonne National Laboratory)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td><b>11.30am - 12.00am</b> (Please note: different start time!)</td>
+                                  <td>Networking activity</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.00pm - 4.15pm</td>
+                                  <td>Lightning & Thunder talks (1 slide / 1 min each)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.15pm - 5.00pm</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/taylor/" target="_blank"><i>4HS: What can(’t) you do with 6 million low-z galaxy redshifts across the southern hemisphere?</i> by <b>Edward Taylor (Swinburne University of Technology)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/newman/" target="_blank"><i>Spectroscopic Samples for Photometric Redshifts: Systematic Biases and Unknown Unknowns</i> by <b>Jeff Newman (University of Pittsburgh)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/hemmati/" target="_blank"><i>Have we seen enough?</i> by <b>Shoubaneh Hemmati (Caltech / IPAC)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday February 16</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday February 17</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 6 - virtual - <i>Studying galaxies with resolved observations and simulations, and multi-resolution data</i></h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday February 20</th>
+                                  <td></td>
+                                  <td>President's Day - No Program</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday February 21</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/necib/" target="_blank">Review talk: <i>Identifying Kinematic Substructure with Machine Learning</i> by <b>Lina Necib (MIT)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/discussion5/" target="_blank">Moderated discussion</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday February 22</th>
+                                  <td>No scheduled activities</td>
+                                  <td>Flexible time for self-organized meetings and working on projects</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday February 23</th>
+                                  <td>9.00am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/sotoudeh/" target+"_blank">Tutorial: Probabilistic U-Nets by <b>Hadi Sotoudeh (University of Montreal)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>10.30am - 11.00am</td>
+                                  <td>Ethics discussion: Equal access to expertise, to hardware, to software, to data</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday February 24</th>
+                                  <td>9.00am - 10.00am</td>
+                                  <td>Short Talks (10+5 minutes each): <a href="https://online.kitp.ucsb.edu/online/galevo23/farsian/" target="_blank"><i>Graph-Convolutional Neural Networks as a new tool to extract clustering information of the Cosmic web</i> by <b>Farida Farsian (University of Bologna)</b></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        </ul>
+                    </br>
+                    <h2 class="description-title">Program Elements</h2>
+                    </br>
+                        <ul>
+                        <li><h1 class="the-team-subtitle">Review talks and moderated open discussion</h1>
+                            <p>
+                            The Review Talks will provide a broad overview and introduction into aspects of galaxy formation and evolution and statistical and machine learning applications related to the weekly topic. These review talks are all followed by a moderated discussion sessions, where the research and future prospects can be discussed. Three main questions will form a part of each of these review+discussion sessions:
+                            <ul>
+                            <li><i>How do we properly compare results between theory and observations?</i></li>
+                             <li><i>What advantages/disadvantages are there to use ML/data science apporaches in this context?</i></li>
+                             <li><i>Can data science results in this context be connected to physical interpretation? Should they? And if yes, how?</i></li>
+                             </ul>
+                            <image class="img-responsive" width="30%" src="./graphics/wordcloud1.png">
+                            <image class="img-responsive" width="30%" src="./graphics/wordcloud2.png">
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Lightning & Thunder talks</h1>
+                            <p>
+                            The lightning & thunder series exist of 1 slide / 1 min talks to introduce ourselves to each other and in particular our goals for the week/weeks/whole program. A 1-slide lightning talk could highlight your expertise, describe what you would like to learn that week/during the program, and your research/collaborative goals. Ideally, if you present a lightning slide, this would be paired with a thunder slide later in the week/program where you describe what you have learned and what progress you made on your goals.
+                            We are flexible in the planning of lightning versus thunder slides, and we expect to see mostly lightning slides in the first weeks, and hopefully more thunder slides toward the end of the program.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Tutorials</h1>
+                            <p>
+                            The tutorials will address varying topics in galaxy formation and connected machine learning apporaches, or exist of introductions to statistical and/or machine learning tools, techniques and applications. In the virtual schedule there is 1.5 hour reserved for each tutorial, but speakers are asked to aim their tutorial for about 1 hour of interactive work to allow sufficient time for further questions and discussion.</br>
+                            The tutorials will predominantly use the python programming language, and a familiarity with coding and python is strongly recommended.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Networking activities</h1>
+                            <p>
+                            The short networking sessions have the goal to allow participants to meet each other, chat about common interests, and perhaps even start new collaborations together. There are currently three sessions reserved for these networking activities, occuring once every two weeks, and alternating with the ethics discussions.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Ethics discussions</h1>
+                            <p>
+                            We will host short discussion sessions focused around some of the ethical questions connected with machine learning techniques, applications, and access. A few of these questions are also more widely applicable in galaxy evolution research, astrophysics, and/or science as a whole. There are currently three sessions reserved for these ethics-related discussions, occuring once every two weeks, and alternating with the networking activities. Ethics discussions will not be recorded.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Short talks</h1>
+                            <p>
+                            The short talks exist of 10 minute talks with additional 5 minutes reserve for questions. The aim is to highlight additional views and applications, but also additional questions related to the topics of the week. Additionally, we endeavor to predominantly highlight work by more junior participants in this series.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Working groups</h1>
+                            <p>
+                            Anyone is welcome to start a working group dedicated to a sepcific topic, technique, or key question. The working groups are lead by volunteers and should be self-organized. During the virtual program most Thursday's are reserved for working groups to have their own meetings and discussions, but both the day and whether to organize meetings is flexible and up to the working group itself to decide. If you are interested in starting a working group on a particular topic please let us know!
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Asynchronous pre-recorded talks</h1>
+                            <p>
+                            We invite anyone who is interested to prepare a pre-recorded 10-minute talk about their work. These talks can be uploaded and we will host them on our dedicated youtube channel. Please also feel free to announce your pre-recorded talk on the dedicated slack channel. We especially encourage junior participants to use this opportunity to introduce themselves.
+                            </p>
+                        </li>
+                        </br>
+                    </ul>
+                    </br>
+                    <h2 class="description-title">Program Tools</h2>
+                    </br>
+                        <ul>
+                        <li><h1 class="the-team-subtitle">Zoom sessions</h1>
+                            <p>
+                            All scheduled virtual sessions will take place in Zoom, hosted by the KITP, UCSB. All participants have received the link for zoom registration. If you have any questions or problems please contact the organizers (see contact info at the bottom), or the KITP.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Slack space</h1>
+                            <p>
+                            We encourage all participants to join the slack space, and the #galevo23-general channel there. Many asynchronous discussions and collaborations will take place there, and announcement will be shared on slack as well. If you have not received an invitation to slack, and/or have any questions please contact the organizers (see contact info at the bottom), or the KITP.
+                            </p>
+                        </li>
+                        </br>
+                        <li><h1 class="the-team-subtitle">Github page</h1>
+                            <p>
+                            The program has its own <a href="https://github.com/DataDrivenGalaxyEvolution" target="_blank">github page</a>, and we hope that this will enable an ease of sharing for example code and tutorials among participants, further facilitating interaction and collaboration.
+                            </p>
+                        </li>
+                        </br>
+                    </ul>
+                    </br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg1">
+            <div class="container-fluid">
+                <div class="research-page" id="ccaweek">
+                    </br>
+                    <h2 class="description-title">Joint KITP-CCA Workshop</h2>
+                    </br>
+                    <p>The hybrid Joint KITP-CCA workshop, hosted by the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" target ="_blank">CCA</a> in New York City, takes place January 30 - February 3 2023. It will have plenary talks and discussion sessions in the morning, and parallel tutorial and workshop sessions as well as free discussion/hack time in the afternoon. The program elements follow a similar setup as those for the virtual program. Additionally all asynchronous activities (Slack, pre-recorded talks) from the virtual program are also available this week.</p>
+                    <p><b>We expect all participants to treat each other respectfully, and to abide by our <a href="https://urldefense.com/v3/__https://docs.google.com/presentation/d/1-IYTpMGe-JIDyyZU0m04uPJseR81ZoNa-MHdpRLkcM0/edit?usp=sharing__;!!Dq0X2DkFhyF93HkjWTBQKhk!UxRpyi0Eo-jrh7IQbIf5pORx0DEj2UCbbQe-TDSQaX9O1ZN7-e9fGNIMP7AS95XNQVPmgtLBW9ITLOztLqPBXqyOKqrp4Ab3dhKKiw$" target="_blank">code of conduct.</a> Participation also requires agreeing to follow <a href="https://www.simonsfoundation.org/flatiron/code-of-conduct/" target="_blank">the Flatiron Institute code of conduct.</a></b></p>
+                    
+                    </br><p>The events during the workshop will take place at two different locations. In the mornings, all talks and discussions will be the Ingrid Daubechies Auditorium on the 2nd floor of the Flatiron Institute at <a href="https://www.google.com/maps/place/162+5th+Ave,+New+York,+NY+10010/@40.7404614,-73.9907129,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a1f3724bfd:0x37192dfcaa472df1!8m2!3d40.7404614!4d-73.9907129" target="_blank">162 Fifth Avenue (entrance around the corner on 21st Street)</a>. Breakfast, morning coffee breaks, and lunch will be available on the 2nd floor outside the auditorium. In the afternoon, the tutorials and discussions will take place at Math for America, on the 14th and 17th floor of <a href="https://www.google.com/maps/place/915+Broadway,+New+York,+NY+10010/@40.7397001,-73.9920174,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a3c17b4951:0x470e48c7dd2af9bb!8m2!3d40.7396961!4d-73.9898234" target="_blank">915 Broadway (one block from the Flatiron Institute).</a> The Chi/Psi room is on the 14th floor, and the 17th floor hosts the Alpha/Beta room, additional spaces for impromtu discussions and hack sessions, and the lounge area where afternoon coffee breaks will be. Please note that zoom lines are connected to specific meeting rooms!</p></br>
+                    
+                    <p>Recordings for all (review + short) talks can now be found on the <a href="https://www.simonsfoundation.org/event/cca-kitp-joint-workshop/" target="_blank">CCA event website,</a> and <a href="https://www.youtube.com/playlist?list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ" target="_blank">on this youtube playlist</a>, and recordings of all talks and tutorials are also available in <a href="https://www.dropbox.com/scl/fo/tgpwe1ljr4i9go4ajnsq6/h?dl=0&rlkey=mwl1zi14okj5k1pnbflcgnz3l" target="_blank">this dropbox.</a></p>
+                    
+                   <h1 class="the-team-subtitle">Detailed schedule</h1>
+                   <p>The schedule will be updated with speakers and titles/topics when those are confirmed. <b>All times in the schedule are in US Eastern Time (UTC-5).</b></p></br>
+                        <table class="table table-sm table-hover">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Monday January 30</th>
+                              <td>8.00am-9.00am</td>
+                              <td>Breakfast available for in-person participants [Flatiron Institute, 2nd floor]</td>
+                            </tr>
+                            <th scope="row"></th>
+                              <td>9.00am - 9.15am</td>
+                              <td>Welcome and introduction to the workshop</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.15am - 10.00am</td>
+                              <td><a href="https://www.youtube.com/watch?v=uRyhUoqmz88&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=11" target="_blank">Review talk: <i>Has deep learning solved classification in astronomy?</i> by <b>Marc Huertas-Company (Instituto de Astrofisica de Canarias / Observatoire de Paris)</b></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.00am - 10.30am</td>
+                              <td>Moderated open discussion led by <b>Francisco Villaescusa Navarro (Flatiron Institute)</b>, and decide topic for afternoon workshop/discussion</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.30am - 11.00am</td>
+                              <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.00am - 11.15am</td>
+                              <td>Lightning & Thunder talks</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.15am - 12.00pm</td>
+                              <td><a href="https://www.youtube.com/watch?v=WCJ_FjhmmJ0&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=10" target="_blank">Short talks chaired by <b>Mike Blanton</b>: <i>Merger identification through photometric bands, colours, and their errors</i> by <b>Luis Suelves (Narodowe Centrum Badan Jadrowych Poland)</b> (remote), <i>CANDELS Merger Identification with IllustrisTNG50 Using a Convolutional Neural Network</i> by <b>Aimee Schechter (University of Colorado Boulder)</b>, and <i>Source classification in large photometric surveys</i> by <b>Sotiria Fotopoulou (University of Bristol)</b> (remote)</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>12.00pm - 1.15pm</td>
+                              <td>Lunch break and in-person participants walk over to Math for America</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; <a href="https://www.dropbox.com/scl/fo/tgpwe1ljr4i9go4ajnsq6/h?dl=0&rlkey=mwl1zi14okj5k1pnbflcgnz3l" target="_blank">Tutorial: <i>Robust Uncertainty Estimation in Machine Learning</i> by <b>Aritra Ghosh (Yale University)</b></a> [MfA, 17th floor Alpha/Beta room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; Workshop/Discussion, topic determined in the morning discussion [MfA, 14th floor Chi/Psi room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>2.30pm - 3.00pm</td>
+                              <td>Coffee break [MfA, 17th floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>3.45pm - 4.00pm</td>
+                              <td>End of hybrid program; in-person participants walk back to Flatiron Institute</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>4.00pm - 6.00pm</td>
+                              <td>Reception [Flatiron Institute, 2nd floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Tuesday January 31</th>
+                              <td>8.00am-9.00am</td>
+                              <td>Breakfast available for in-person participants [Flatiron Institute, 2nd floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.00am - 10.00am</td>
+                              <td><a href="https://www.youtube.com/watch?v=SB6K3s5JOJc&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=8" target="_blank">Short talks chaired by <b>Francisco Castander Serentill</b>: <i>Testing Sunyaev-Zel’dovich measurements of the hot gas content of dark matter haloes using synthetic skies</i> by <b>Amandine Le Brun (Paris Observatory / PSL University)</b> (remote), <i>Constraining feedback with galaxy/weak lensing correlations with thermal SZ effect using simulations and data</i> by <b>Shivam Pandey (Columbia University)</b>, <i>Model-insensitive cosmological parameter estimation from cosmological simulations</i> by <b>Yongseok Jo (Flatiron Institute)</b>, and <i>Deep Learning the Circumgalactic Medium (CGM): Take 1</i> by <b>Naomi Gluck (Yale University)</b> (remote)</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.00am - 10.15am</td>
+                              <td>Discussion led by <b>John Wu (Space Telescope Science Institute)</b></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.15am - 10.30am</td>
+                              <td>Lightning & Thunder talks</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.30am - 11.00am</td>
+                              <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.00am - 11.45pm</td>
+                              <td><a href="https://www.youtube.com/watch?v=ST1O49qbbDo&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=9" target="_blank">Review talk on advanced ML in astronomy by <b>Shirley Ho (Flatiron Institute)</b></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.45am - 12.00pm</td>
+                              <td>Discussion  led by <b>John Wu (Space Telescope Science Institute)</b>, and decide topic for afternoon workshop/discussion</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>12.00pm - 1.15pm</td>
+                              <td>Lunch break and in-person participants walk over to Math for America</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; <a href="https://www.dropbox.com/scl/fo/tgpwe1ljr4i9go4ajnsq6/h?dl=0&rlkey=mwl1zi14okj5k1pnbflcgnz3l" target="_blank">Tutorial: Symbolic regression by <b>Miles Cranmer (Princeton University)</b></a> [MfA, 17th floor Alpha/Beta room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; Workshop/Discussion, topic determined in the morning discussion [MfA, 14th floor Chi/Psi room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>2.30pm - 3.00pm</td>
+                              <td>Coffee break [MfA, 17th floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>3.45pm - 4.00pm</td>
+                              <td>End of hybrid program; in-person participants walk back to Flatiron Institute</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>4.00pm - 5.00pm</td>
+                              <td>Flexible discussion/hack time [Flatiron Institute, 5th floor Classroom]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Wednesday February 1</th>
+                              <td>8.00am-9.00am</td>
+                              <td>Breakfast available for in-person participants [Flatiron Institute, 2nd floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.00am - 9.45am</td>
+                              <td><a href="https://www.youtube.com/watch?v=gMhlUI_Q45o&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=7" target="_blank">Review talk on Likelyhood-free inference by <b>Ben Wandelt (Sorbonne University, Institut d’Astrophysique de Paris / Flatiron Institute)</b> (remote)</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.45am - 10.15am</td>
+                              <td>Moderated open discussion led by <b>John Forbes (Flatiron Institute)</b>, and decide topic for afternoon workshop/discussion</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.15am - 10.30am</td>
+                              <td>Lightning & Thunder talks</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.30am - 11.00am</td>
+                              <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.00am - 12.00pm</td>
+                              <td><a href="https://www.youtube.com/watch?v=whK2xQ35Ecs&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=6" target="_blank">Short talks chaired by <b>Sultan Hassan</b>: <i>Modeling the distribution of atomic gas in FIREbox with Deep Learning</i> by <b>Robert Feldmann (University of Zurich)</b>, <i>AGN Feedback Effects on the Low Redshift Lyman-alpha Forest</i> by <b>Megan Tillman (Rutgers University)</b>, <i>Can we build a physical model for galaxy sizes using a data-driven approach?</i> by <b>Festa Bucinca (City University of New York)</b> (remote), <i>Big works on small galaxies</i> by <b>Yu-Heng Lin (University of Minnesota)</b></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>12.00pm - 1.15pm</td>
+                              <td>Lunch break and in-person participants walk over to Math for America</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; <a href="https://www.dropbox.com/scl/fo/tgpwe1ljr4i9go4ajnsq6/h?dl=0&rlkey=mwl1zi14okj5k1pnbflcgnz3l" target="_blank">Tutorial: Simulation-based inference by <b>ChangHoon Hahn (Princeton University)</b></a> [MfA, 17th floor Alpha/Beta room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; Workshop/Discussion, topic determined in the morning discussion [MfA, 14th floor Chi/Psi room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>2.30pm - 3.00pm</td>
+                              <td>Coffee break [MfA, 17th floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>3.45pm - 4.00pm</td>
+                              <td>End of hybrid program; in-person participants walk back to Flatiron Institute</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>4.00pm - 5.00pm</td>
+                              <td>Flexible discussion/hack time [Flatiron Institute, 5th floor Classroom]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Thursday February 2</th>
+                              <td>8.00am-9.00am</td>
+                              <td>Breakfast available for in-person participants [Flatiron Institute, 2nd floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.00am - 9.45am</td>
+                              <td><a href="https://www.youtube.com/watch?v=8MabII_tGUk&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=5" target="_blank">Review talk: <i>Applications of Machine Learning for Studying Galaxy Evolution with JWST and Roman</i> by <b>Henry Ferguson (Space Telescope Science Institute)</b></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.45am - 10.15am</td>
+                              <td>Moderated open discussion led by <b>Rachel Somerville (Flatiron Institute / Rutgers University)</b> and decide topic for afternoon workshop/discussion</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.15am - 10.30am</td>
+                              <td>Lightning & Thunder talks</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.30am - 11.00am</td>
+                              <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.00am - 12.00pm</td>
+                              <td><a href="https://www.youtube.com/watch?v=TCxp1xw5evk&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=4" target="_blank">Short talks chaired by <b>Sarah Wellons</b>: <i>Obscured Growth in the age of Roman and Massively Multiplexed Spectroscopic Facilities</i> by <b>Andreea Petric (Space Telescope Science Institute)</b>, <i>The Euclid Flagship Mock Galaxy Catalogue</i> by <b>Francisco Javier Castander Serentill (Instituto de Ciencias del Espacio)</b> and <i>Demo on scientific computing in cloud-based environments</i> by <b>Toby Brown (National Research Council of Canada)</b> (remote)</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>12.00pm - 1.15pm</td>
+                              <td>Lunch break and in-person participants walk over to Math for America</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; <a href="https://www.dropbox.com/scl/fo/tgpwe1ljr4i9go4ajnsq6/h?dl=0&rlkey=mwl1zi14okj5k1pnbflcgnz3l" target="_blank">Tutorial on SED-modeling by <b>Kartheik Iyer (Columbia University)</b></a> [MfA, 17th floor Alpha/Beta room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; Workshop/Discussion, topic determined in the morning discussion [MfA, 14th floor Chi/Psi room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>2.30pm - 3.00pm</td>
+                              <td>Coffee break [MfA, 17th floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>3.45pm - 4.00pm</td>
+                              <td>End of hybrid program; in-person participants walk back to Flatiron Institute</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>4.00pm - 5.00pm</td>
+                              <td>Flexible discussion/hack time [Flatiron Institute, 7th floor Classroom]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Friday February 3</th>
+                              <td>8.00am-9.00am</td>
+                              <td>Breakfast available for in-person participants [Flatiron Institute, 2nd floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.00am - 9.15am</td>
+                              <td><a href="https://www.youtube.com/watch?v=DfFsrdpOJF0&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=1" target="_blank">Short talks: <i>Interdisciplinary ML for Fundamental Physics</i> by <b>Mariel Pettee (Lawrence Berkeley National Laboratory / Flatiron Institute)</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.15am - 9.45am</td>
+                              <td><a href="https://www.youtube.com/watch?v=wOR1JoqqS3I&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=2" target="_blank">Review talk: <i>From ML x Astrophysics to ML x Climate: A journey across disciplines</i> by <b>Viviana Acquaviva (City University of New York)</b></a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>9.45am - 10.15am</td>
+                              <td>Moderated open discussion led by <b>Blakesley Burkhart (Rutgers University / Flatiron Institute)</b> and decide topic for afternoon workshop/discussion</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.15am - 10.30am</td>
+                              <td>Lightning & Thunder talks</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>10.30am - 11.00am</td>
+                              <td>Coffee break</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.00am - 11.45pm</td>
+                              <td><a href="https://www.youtube.com/watch?v=bJ9SJVuazNw&list=PLWAzLum_3a180ECznso6HvwstZthGSoEZ&index=3" target="_blank">Review talk: <i>Unsupervised Learning: How to sift through astronomical haystacks without getting lost in metaphors, hyperboles, or in a random forest</i> by <b>Dovi Poznanski (Tel Aviv University)</b> (remote)</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>11.45am - 12.00pm</td>
+                              <td>Discussion</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>12.00pm - 1.15pm</td>
+                              <td>Lunch break and in-person participants walk over to Math for America</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; <a href="https://www.dropbox.com/scl/fo/tgpwe1ljr4i9go4ajnsq6/h?dl=0&rlkey=mwl1zi14okj5k1pnbflcgnz3l" target="_blank">Tutorial: Graph Neural Networks and merger trees by <b>Christian Kragh Jespersen (Princeton University)</b></a> [MfA, 17th floor Alpha/Beta room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>1.15pm - 3.45pm</td>
+                              <td>Parallel sessions; Workshop/Discussion, topic determined in the morning discussion [MfA, 14th floor Chi/Psi room]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>2.30pm - 3.00pm</td>
+                              <td>Coffee break [MfA, 17th floor]</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>3.45pm - 4.00pm</td>
+                              <td>End of hybrid program; in-person participants walk back to Flatiron Institute</td>
+                            </tr>
+                            <tr>
+                              <th scope="row"></th>
+                              <td>4.00pm - 5.00pm</td>
+                              <td>Flexible discussion/hack time [Flatiron Institute, 7th floor Classroom]</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </br>
+                    </br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg1">
+            <div class="container-fluid">
+                <div class="research-page" id="kitpweeks">
+                    </br>
+                    <h2 class="description-title">KITP in-person/hybrid Program</h2>
+                    </br>
+                    <p>This in-person component of our KITP program will run February 27 - March 24 2023. It consists of a sparse but regular schedule of different events, some limited to in-person participants only, some hybrid, described in more detail below the schedule. </p>
+                    <p><b>We expect all participants, in-person and those joining on zoom, to treat each other respectfully, and to abide by our <a href="https://urldefense.com/v3/__https://docs.google.com/presentation/d/1-IYTpMGe-JIDyyZU0m04uPJseR81ZoNa-MHdpRLkcM0/edit?usp=sharing__;!!Dq0X2DkFhyF93HkjWTBQKhk!UxRpyi0Eo-jrh7IQbIf5pORx0DEj2UCbbQe-TDSQaX9O1ZN7-e9fGNIMP7AS95XNQVPmgtLBW9ITLOztLqPBXqyOKqrp4Ab3dhKKiw$" target="_blank">code of conduct.</a> Participation also requires agreeing to follow the <a href="https://www.kitp.ucsb.edu/sites/default/files/kitp/forms/KITP-Code-of-Conduct-2020.pdf" target="_blank"
+                        >KITP code of conduct.</a></b></p></br>
+                    
+                    <h1 class="the-team-subtitle">Detailed schedule</h1>
+                    <p>The schedule will be updated with speakers and titles/topics when those are confirmed. Links to recorded talks will be added when available. Please also find all recordings (some public, some private) on the <a href="https://online.kitp.ucsb.edu/online/galevo23/" target="_blank">KITP program page.</a> All events for our program will be in the Fred Kavli Auditorium (1003). </br><b>All times quoted are in US Pacific Time (UTC-8).</b></p></br>
+                        <ul>
+                        <li><h1 class="the-team-subtitle">Week 1: February 27 - March 3</h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday February 27</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(in-person only) Meet for coffee (for participants who have arrived already)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday February 28</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(in-person only) Meet for coffee and short informal introductions</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday March 1</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/peek/" target="_blank">(hybrid) Review talk: <i>Machine Learning and Astronomy</i> by <b>Josh Peek (Space Telescope Science Institute)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td>(hybrid) Moderated dicussion</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday March 2</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(hybrid) Blackboard talks: <a href="https://online.kitp.ucsb.edu/online/galevo23/villaume/" target="_blank"><b>Alexa Villaume (University of Waterloo)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday March 3</th>
+                                  <td>10.30am</td>
+                                  <td>(in-person only) Joint informal meeting with the cosmic-web program participants</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 2: March 6 - March 10</h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday March 6</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(in-person only) Meet for coffee and introductions/Lightning slides</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday March 7</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(hybrid) Blackboard talks: <a href="https://online.kitp.ucsb.edu/online/galevo23/hearin2/" target="_blank"><i>Probabilistic Predictions and Physics-Informed Priors</i> by <b>Andrew Hearin (Argonne National Laboratory)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/acquaviva/" target="_blank"><i>Interpretability tools for ML models</i> facilitated by <b>Viviana Acquaviva (City University of New York)</b></a> <a href="https://docs.google.com/document/d/1AKWUL-c9I2cUI9BHHdkiMAtTjMOunkOrAuvky5C8Lj0/edit" target="_blank">[Interpretability Notes]</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>6.00pm - 7.00am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/friends/necib/" target="_blank">Public Chalk Talk for Friends of the KITP: <i>The Genealogy of the Milky Way and the search for the missing Dark Matter</i> by <b>Lina Necib (MIT)</b> (Simons Amphitheater)</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday March 8</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/somerville/" target="_blank">(hybrid) Review talk: <i>Connecting theoretical models of galaxy formation with observations</i> by <b>Rachel Somerville (Flatiron Institute / Rutgers University)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/galevo23/discussion8/" target="_blank">(hybrid) Moderated dicussion</a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday March 9</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(hybrid) Blackboard talks: <a href="https://online.kitp.ucsb.edu/online/galevo23/huertascompany/" target="_blank">"<i>Self-supervised learning</i> by <b>Marc Huertas-Company (Instituto de Astrofisica de Canarias / Observatoire de Paris / Flatiron Institute)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/hahn_lovell/" target="_blank"><i>Neural density estimation, simulation-based inference and normalizing flows</i> by <b>ChangHoon Hahn (Princeton University)</b> and <b>Chris Lovell (University of Portsmouth)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>4.00pm - 5.00pm</td>
+                                  <td><a href="https://online.kitp.ucsb.edu/online/bblunch/wechsler3" target="_blank">KITP Blackboard talk about our program: <i>Learning from billions of galaxies: Can our understanding of galaxy formation keep up with the upcoming data revolution?</i> by <b>Risa Wechsler (KIPAC / Stanford University)</b></a></td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday March 10</th>
+                                  <td>10.00am - 10.30am</td>
+                                  <td>(in-person only) Thunder slides (location: Simons Amphitheater)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>10.30am - 11.30am</td>
+                                  <td>(in-person only) Joint informal meeting with the cosmic-web program participants (location: Simons Amphitheater)</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 3: March 13 - March 17</h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Monday March 13</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(in-person only) Meet for coffee and introductions/Lightning slides  (location: Simons Amphitheater)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday March 14</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(hybrid) Blackboard talks: <a href="https://online.kitp.ucsb.edu/online/galevo23/kraghjespersen/" target="_blank"><i>The unreasonable efficiency of GNNs for physics</i> by <b>Christian Kragh Jespersen (Princeton University)</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/hassan_lovell/" target="_blank"><i>Pushing models to the limit in the search for new physics</i> by <b>Chris Lovell (University of Portsmouth)</b> and <b>Sultan Hassan (New York University)</b></a>  (location: Simons Amphitheater)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Wednesday March 15</th>
+                                  <td>9.00am - 9.45am</td>
+                                  <td>(hybrid) <a href="https://online.kitp.ucsb.edu/online/galevo23/walmsley/" target="_blank">Review talk: <i>Learning from pictures</i> by <b>Mike Walmsley (Univeristy of Manchester)</b></a>  (location: Simons Amphitheater)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>9.45am - 10.30am</td>
+                                  <td>(hybrid) <a href="https://online.kitp.ucsb.edu/online/galevo23/discussion9/" target="_blank">Moderated dicussion</a>  (location: Simons Amphitheater)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Thursday March 16</th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(hybrid) Blackboard talks: <a href="https://online.kitp.ucsb.edu/online/galevo23/hzhang/" target="_blank>"<i>Data-driven model of galaxy - supermassive black hole connection</i> by <b>Haowen Zhang</b></a>, <a href="https://online.kitp.ucsb.edu/online/galevo23/iyer/" target="_blank"><i>The intrinsic dimensionality / information content of galaxy observations</i> by <b>Kartheik Iyer (Columbia University)</b></a> <a href="https://docs.google.com/document/d/1AO_HBUhTGdertiVT_Fly7X1iinBRIfxTXgnulnHnSy0/edit?usp=sharing" target="_blank">[notes and references]</a> (location: Simons Amphitheater)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Friday March 17</th>
+                                  <td>11.00am - 12.00am</td>
+                                  <td>(in-person only) Thunder slides (location: Simons Amphitheater)</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </li>
+                        <li><h1 class="the-team-subtitle">Week 4: - KITP Conference</h1>
+                            <table class="table table-sm table-hover">
+                              <tbody>
+                                  <tr>
+                                    <th scope="row">Monday March 20</th>
+                                    <td>10.30am - 11.00am</td>
+                                    <td>(in-person only) Blackboard talk: <i>Deciphering and learning the mapping between quantum noise and galaxies</i> by <b>Martin Rey (Oxford University)</b></td>
+                                  </tr>
+                                <tr>
+                                  <th scope="row"></th>
+                                  <td>11.00am - 12.00pm</td>
+                                  <td>(in-person only) Moderated discussion</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"> Tuesday March 21 - Friday March 24</th>
+                                  <td>9.00am - 5.00pm</td>
+                                  <td><a href="https://www.kitp.ucsb.edu/activities/galevo-c23#schedule" target="_blank">Conference</a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        <p><b>While the program is nominally continuing, the schedule will consist of the <a href="https://www.kitp.ucsb.edu/activities/galevo-c23" target="_blank">associated KITP conference</a>, for which a separate registration is required.</br></p>
+                        </li>
+                        </ul>
+                        </br>
+                        </br>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg1">
+                <div class="container-fluid">
+                    <div class="research-page" id="conference">
+                        </br>
+                        <h2 class="description-title">KITP Conference</h2>
+                        </br>
+                        <p><a href="https://www.kitp.ucsb.edu/activities/galevo-c23" target="_blank">The associated KITP Conference</a> will take place March 21 - March 24 2023. <b>All participants, those in-person and those joining on zoom, are expected to treat each other respectfully, and to abide by our <a href="https://urldefense.com/v3/__https://docs.google.com/presentation/d/1-IYTpMGe-JIDyyZU0m04uPJseR81ZoNa-MHdpRLkcM0/edit?usp=sharing__;!!Dq0X2DkFhyF93HkjWTBQKhk!UxRpyi0Eo-jrh7IQbIf5pORx0DEj2UCbbQe-TDSQaX9O1ZN7-e9fGNIMP7AS95XNQVPmgtLBW9ITLOztLqPBXqyOKqrp4Ab3dhKKiw$" target="_blank">code of conduct.</a> Participation also requires agreeing to follow the <a href="https://www.kitp.ucsb.edu/sites/default/files/kitp/forms/KITP-Code-of-Conduct-2020.pdf" target="_blank"
+                            >KITP code of conduct.</a></b></br>
+                        </br>
+                        The full schedule of the conference can be found <a href="https://www.kitp.ucsb.edu/activities/galevo-c23#schedule" target="_blank">here,</a> and recordings of the talks are available <a href="https://online.kitp.ucsb.edu/online/galevo-c23/" target="_blank">here.</a></p></br>
+                        </br>
+                    </div>-->
+                </div>
+            </div>
+
+ 
+        
+		
+        <div id="contact"  class="contact-page">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="p-2 flex-grow-1">
+                    <h2 class="contact-title">Contact</h2>
+                     [at] gmail.com</br>
+                </div>
+            </div>
+        </div>
+        
+        
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
